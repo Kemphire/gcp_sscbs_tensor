@@ -1101,7 +1101,6 @@ def main():
     #
     #
     # for file in sorted_files:
-    #     sys.stdout.write(f"\n\nOperating on {file}\n\n")
     #     runOnDataset(file.stem)
     files = [
         "standing_up_from_lying",
@@ -1111,6 +1110,7 @@ def main():
         "falling",
     ]
     for f in files:
+        sys.stdout.write(f"\n\nOperating on {file}\n\n")
         runOnDataset(f)
 
 
